@@ -10,9 +10,13 @@
   },
   "scripts": {
     "dev": "turbo run dev",
+    "dev:api": "pnpm --filter api run dev",
     "build": "turbo run build",
+    "build:api": "turbo run build --filter=api",
     "lint": "turbo run lint",
+    "lint:api": "pnpm --filter api run lint",
     "type-check": "turbo run type-check",
+    "type-check:api": "pnpm --filter api run type-check",
     "test": "turbo run test"
   },
   "keywords": [],
